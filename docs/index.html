@@ -1,22 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Webpack</title>
-<link href="main.c9be7f6706a28700d217.css" rel="stylesheet"></head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+</head>
+
 <body>
 
-    <img src="assets/webpack-sprite.png" alt="Webpack logo" width="250px">
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-8">
+                <h1>Lista de deseos</h1>
+            </div>
+            <div class="col-4 align-self-end">
+                <div class="row justify-content-end">
+                    <div class="col-4">
+                        <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                            data-bs-target="#pedirDeseo" id="btnPedirDeseo">
+                            Pedir
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row row-cols-1 row-cols-md-3 g-4" id="padre-deseos">
+            <!-- <div class="col">
+                <div class="card">
+                    <img src="assets/webpack-sprite.png" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="assets/webpack-sprite.png" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                    </div>
+                </div>
+            </div> -->
+        </div>
 
-    <!-- Este es un comentario en HTML -->
-    <!-- Este es un comentario en HTML -->
-    <!-- Este es un comentario en HTML -->
-    <!-- Este es un comentario en HTML -->
-    <!-- Este es un comentario en HTML -->
-    <!-- Este es un comentario en HTML -->
-    <!-- Este es un comentario en HTML -->
-    
-<script type="text/javascript" src="main.0d7cfbbe34c458d9ccea.js"></script></body>
+        <!-- Modal -->
+        <div class="modal fade" id="pedirDeseo" tabindex="-1" aria-labelledby="pedirDeseoLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="pedirDeseoLabel">Pide otro deseo</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="formPedirDeseo">
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Título</label>
+                                <input type="text" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="¿Cuál es el título de tu deseo?">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label">Deseo</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" maxlength="200"
+                                    placeholder="¿Qué quieres pedir?"></textarea>
+                            </div>
+                            <div class="input-group">
+                                <input type="file" class="form-control" id="inputGroupFile04"
+                                    aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary" id="btnNuevoDeseo">¡Pedir!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="main.cd23093a9d8bed21b506.js"></script></body>
+
 </html>
